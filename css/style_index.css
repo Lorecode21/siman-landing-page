@@ -233,3 +233,54 @@ body, html{
     align-content: center;
     text-align: center;
 }
+
+.foot{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+
+}
+
+.foot_icons{ 
+    background-color: black;
+    background-position: center;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.foot_icons a:hover{
+    background-color: #493e3e;
+}
+
+.foot_facebook img{
+    width: 50%;
+    height: 50%;
+    align-items:center;
+    margin: 1rem;
+}
+
+.foot_instagram img{
+    width: 50%;
+    height: 50%;
+    align-items:center;
+    margin: 1rem;
+}
+
+.foot_x img{
+    width: 50%;
+    height: 50%;
+    align-items:center;
+    margin: 1rem;
+}
+
+.call_center{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin: 1.4rem;
+    color: white;
+}
+
