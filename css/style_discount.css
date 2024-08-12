@@ -63,20 +63,22 @@ body, html{
     --ys:"Ysabeau SC";
 }
 
-
-/* Nav bar styling */
+/*------------------Nav bar styling----------------------*/
 
 .header{
     width: 100%;
-    height: 4rem;
-    display: flex;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(60px,1000px));
+    background-image: url(https://res.cloudinary.com/dmzhif1op/image/upload/v1723351927/fondo_wzkuez.jpg);
+    background-position: center;
 }
 
 .header_navbar{
-    background-image: url(https://res.cloudinary.com/dmzhif1op/image/upload/v1723351927/fondo_wzkuez.jpg);
-    background-position: center;
-    overflow: hidden;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 120px));
     height: 100%;
     width: 100%;
     font-family: var(--kanit);
@@ -102,48 +104,34 @@ body, html{
 }
 
 .header_logo img{
-    width: 90%;
-    height: 90%;
-    align-items:flex-start;
+    width: 50px;
+    height: 50px;
+    align-items:start;
     margin: 0.2rem;
 }
 
-
-.header_icons{ 
-    background-image: url(https://res.cloudinary.com/dmzhif1op/image/upload/v1723351927/fondo_wzkuez.jpg);
-    background-position: center;
-    overflow: hidden;
+.header_icons{
     display: flex;
-    height: 100%;
     width: 100%;
+    padding-left:3rem;
+    justify-content: center;
+    justify-items: center;
 }
 
 .header_icons a:hover{
     background-color: #eec9c9;
 }
 
-.facebook img{
-    width: 50%;
-    height: 50%;
-    align-items:flex-end;
-    margin: 1rem;
+.icon{
+    width: 100%;
+    height: 100%;
+    align-items:center;
 }
 
-.instagram img{
-    width: 50%;
-    height: 50%;
-    align-items:flex-end;
-    margin: 1rem;
-}
 
-.x img{
-    width: 50%;
-    height: 50%;
-    align-items:flex-end;
-    margin: 1rem;
-}
+/*---------------Content style----------------------*/
 
- .content{
+.content{
     width: 100%;
     background-color: var(--back);
     background-size: cover;
@@ -220,7 +208,7 @@ body, html{
 }
 
 .content_cond{
-    width: 50%;
+    width: 98%;
     margin:3px;
     padding: 5px;
     text-align: justify;
@@ -234,53 +222,34 @@ body, html{
     border-radius: 5px;
 }
 
+/* -------Foot style------- */
+
 .foot{
     width: 100%;
-    height: 4rem;
     display: flex;
-
+    background-color: black;
 }
 
-.foot_icons{ 
-    background-color: black;
-    background-position: center;
-    overflow: hidden;
-    display:flex;
-    justify-content: center;
-    height: 100%;
+.foot_icons{
+    display: flex;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .foot_icons a:hover{
     background-color: #493e3e;
 }
 
-.foot_facebook img{
-    width: 50%;
-    height: 50%;
+.foot_icon{
+    width: 100%;
+    height: 100%;
     align-items:center;
-    margin: 1rem;
-}
-
-.foot_instagram img{
-    width: 50%;
-    height: 50%;
-    align-items:center;
-    margin: 1rem;
-}
-
-.foot_x img{
-    width: 50%;
-    height: 50%;
-    align-items:center;
-    margin: 1rem;
 }
 
 .call_center{
     width: 50%;
-    height: 50%;
     text-align: center;
     margin: 1.4rem;
     color: white;
 }
-

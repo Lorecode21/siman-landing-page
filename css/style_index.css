@@ -64,26 +64,28 @@ body, html{
 }
 
 
-/* Nav bar styling */
+/*------------------Nav bar styling----------------------*/
 
 .header{
     width: 100%;
-    height: 4rem;
-    display: flex;
+    display: grid;
+    background-color:var(--light_red);
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(60px,1000px));
 }
 
 .header_navbar{
-    background-color:var(--light_red);
-    overflow: hidden;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 120px));
     height: 100%;
     width: 100%;
     font-family: var(--kanit);
 }
 
 .header_navbar a{
-    float: left;
-    color: #ffffff;
+    color: white;
     text-align: center;
     padding: 2%;
     text-decoration: none ;
@@ -91,7 +93,7 @@ body, html{
 }
 
 .header_navbar a:hover{
-    background-color: #eec9c9;
+    background-color: var(--back);
     color:black
 }
 
@@ -101,56 +103,41 @@ body, html{
 }
 
 .header_logo img{
-    width: 90%;
-    height: 90%;
-    align-items:flex-start;
+    width: 50px;
+    height: 50px;
+    align-items:start;
     margin: 0.2rem;
 }
 
-
 .header_icons{
-    background-color:var(--light_red);
-    overflow: hidden;
     display: flex;
-    height: 100%;
     width: 100%;
+    padding-left:3rem;
+    justify-content: center;
+    justify-items: center;
 }
 
 .header_icons a:hover{
-    background-color: #eec9c9;
+    background-color: var(--back);
 }
 
-.facebook img{
-    width: 50%;
-    height: 50%;
-    align-items:flex-end;
-    margin: 1rem;
+.icon{
+    width: 100%;
+    height: 100%;
+    align-items:center;
 }
 
-.instagram img{
-    width: 50%;
-    height: 50%;
-    align-items:flex-end;
-    margin: 1rem;
-}
-
-.x img{
-    width: 50%;
-    height: 50%;
-    align-items:flex-end;
-    margin: 1rem;
-}
-
+/*---------------Content style----------------------*/
 .content{
     background-color: var(--back);
     width: 100%;
+    justify-content: center;
 }
 
 .content_container{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2rem 2rem 52rem 3rem;
-    width: 100%;
     justify-items: center;
 }
 
@@ -162,7 +149,6 @@ body, html{
     font-family: var(--mono), sans-serif ;
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
     color: var(--dark_red);   
 }
 
@@ -174,13 +160,11 @@ body, html{
     font-family: var(--kanit);
     font-style: normal;
     font-weight: 600;
-    font-display: swap;
     color: var(--dark_red);
 }
 
 .content_place{
     width: 90%;
-    height: 90%;
     display: grid;
     align-items: center;
     justify-items: center;
@@ -189,9 +173,10 @@ body, html{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
     grid-template-rows: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
+    justify-content: center;
 }
 
 .content_promo{
@@ -204,17 +189,17 @@ body, html{
     font-weight: 400;
     font-display: swap;
     background-color:var(--light_red);
-    height: 4rem;
     color: white;
+    padding: 1rem;
 }
 
 .cel{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: max-content;
+    grid-template-columns: 1fr;
     padding: 0.3rem;
-    grid-template-rows: 12rem 0.5rem;
+    grid-template-rows: 12rem 3rem;
     background-color:rgba(255, 255, 255, 0.589);
     justify-content: center;
 }
@@ -234,51 +219,33 @@ body, html{
     text-align: center;
 }
 
+/* -------Foot style------- */
+
 .foot{
     width: 100%;
-    height: 4rem;
     display: flex;
-
+    background-color: black;
 }
 
-.foot_icons{ 
-    background-color: black;
-    background-position: center;
-    overflow: hidden;
-    display:flex;
-    justify-content: center;
-    height: 100%;
+.foot_icons{
+    display: flex;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .foot_icons a:hover{
-    background-color: #493e3e;
+    background-color: gray;
 }
 
-.foot_facebook img{
-    width: 50%;
-    height: 50%;
+.foot_icon{
+    width: 100%;
+    height: 100%;
     align-items:center;
-    margin: 1rem;
-}
-
-.foot_instagram img{
-    width: 50%;
-    height: 50%;
-    align-items:center;
-    margin: 1rem;
-}
-
-.foot_x img{
-    width: 50%;
-    height: 50%;
-    align-items:center;
-    margin: 1rem;
 }
 
 .call_center{
     width: 50%;
-    height: 50%;
     text-align: center;
     margin: 1.4rem;
     color: white;

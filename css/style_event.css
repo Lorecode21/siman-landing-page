@@ -64,25 +64,27 @@ body, html{
 }
 
 
-/* Nav bar styling */
+/* ---------Nav bar styling----------- */
 
 .header{
     width: 100%;
-    height: 4rem;
-    display: flex;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(60px,1000px));
+    background-color: var(--baby_red);
+    justify-content: space-between;
 }
 
 .header_navbar{
-    background-color: var(--baby_red);
-    overflow: hidden;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 120px));
     height: 100%;
     width: 100%;
     font-family: var(--kanit);
 }
 
 .header_navbar a{
-    float: left;
     color: black;
     text-align: center;
     padding: 2%;
@@ -101,47 +103,33 @@ body, html{
 }
 
 .header_logo img{
-    width: 90%;
-    height: 90%;
-    align-items:flex-start;
+    width: 50px;
+    height: 50px;
+    align-items:start;
     margin: 0.2rem;
 }
 
-
-.header_icons{ 
-    background-color: var(--baby_red);
-    overflow: hidden;
+.header_icons{
     display: flex;
-    height: 100%;
     width: 100%;
+    padding-left:3rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .header_icons a:hover{
     background-color: var(--light_red);
 }
 
-.facebook img{
-    width: 50%;
-    height: 50%;
-    align-items:flex-end;
-    margin: 1rem;
+.icon{
+    width: 100%;
+    height: 100%;
+    align-items:center;
 }
 
-.instagram img{
-    width: 50%;
-    height: 50%;
-    align-items:flex-end;
-    margin: 1rem;
-}
+/* ------------------Content style------------------- */
 
-.x img{
-    width: 50%;
-    height: 50%;
-    align-items:flex-end;
-    margin: 1rem;
-}
-
- .content{
+.content{
     width: 100%;
     background-color: var(--back);
     background-size: cover;
@@ -257,7 +245,6 @@ body, html{
 
 }
 
-
 .clases_img{
     width: 100%;
     height: 100%;
@@ -301,58 +288,35 @@ body, html{
     grid-area: i;
 }
 
+/* -------Foot style------- */
+
 .foot{
     width: 100%;
-    height: 4rem;
     display: flex;
-
+    background-color: black;
+    align-items: center;
 }
 
-.foot_icons{ 
-    background-color: rgb(118, 106, 106);
-    background-position: center;
-    overflow: hidden;
-    display:flex;
-    justify-content: center;
-    height: 100%;
+.foot_icons{
+    display: flex;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .foot_icons a:hover{
     background-color: #493e3e;
 }
 
-.foot_facebook img{
-    width: 50%;
-    height: 50%;
+.foot_icon{
+    width: 100%;
+    height: 100%;
     align-items:center;
-    margin: 1rem;
 }
 
-.foot_instagram img{
+.call_center{    
     width: 50%;
-    height: 50%;
-    align-items:center;
-    margin: 1rem;
-}
-
-.foot_x img{
-    width: 50%;
-    height: 50%;
-    align-items:center;
-    margin: 1rem;
-}
-
-.call_center{
-    width: 50%;
-    height: 50%;
     text-align: center;
-    margin: 1rem;
-    color: black;
-    font-family: var(--ys);
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    font-size: 1.5rem;
+    margin: 1.4rem;
+    color: white;
 }
-
